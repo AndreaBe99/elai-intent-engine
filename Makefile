@@ -13,6 +13,7 @@ help:
 	@echo "  deploy       3. Deploy with Docker Compose (build and start in background)"
 	@echo "  run-docker   4. Run with Docker Compose (foreground)"
 	@echo "  stop-docker  5. Stop and remove Docker Compose containers"
+	@echo "  view-db      6. View the content of the predictions collection in MongoDB"
 
 # 0. setup uv
 setup:
@@ -42,3 +43,7 @@ run-docker:
 # 5. stop docker compose
 stop-docker:
 	docker compose -f docker/docker-compose.yml down
+
+# 6. view predictions content
+view-db:
+	docker exec ml_predictive_mongodb mongosh predictions_db --eval "db.predictions.find().pretty()"

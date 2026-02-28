@@ -48,6 +48,11 @@ Cleanup Docker containers and volumes:
 make stop-docker
 ```
 
+View stored predictions in MongoDB:
+```bash
+make view-db
+```
+
 ---
 
 ## 🧪 Testing

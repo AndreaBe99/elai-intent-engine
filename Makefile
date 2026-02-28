@@ -16,6 +16,7 @@ help:
 
 # 0. setup uv
 setup:
+	cp .env.example .env
 	uv sync --all-groups
 	uv pip install -e .
 

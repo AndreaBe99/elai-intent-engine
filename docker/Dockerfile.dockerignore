@@ -1,0 +1,8 @@
+# Ignore everything by default
+*
+
+# Allow necessary files and directories
+!pyproject.toml
+!uv.lock
+!src/
+!resources/

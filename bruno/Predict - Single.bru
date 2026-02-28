@@ -1,0 +1,23 @@
+meta {
+  name: Predict - Single
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/predict
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Mario Rossi",
+    "eta": 35,
+    "cliente_attivo": "SI"
+  }
+}

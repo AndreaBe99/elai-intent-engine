@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "AI Predictive API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

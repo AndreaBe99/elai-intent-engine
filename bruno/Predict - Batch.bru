@@ -1,0 +1,35 @@
+meta {
+  name: Predict - Batch
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/predict
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  [
+    {
+      "nome": "Anna Verdi",
+      "eta": 22,
+      "cliente_attivo": "NO"
+    },
+    {
+      "nome": "Luigi Bianchi",
+      "eta": 55,
+      "cliente_attivo": "SI"
+    },
+    {
+      "nome": "Sara Neri",
+      "eta": 40,
+      "cliente_attivo": "SI"
+    }
+  ]
+}
